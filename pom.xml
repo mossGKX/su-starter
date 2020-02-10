@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>su-starter</artifactId>
+	<version>X1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>com.cntest</groupId>
+		<artifactId>su-dependencies</artifactId>
+		<version>X1.0.0</version>
+	</parent>
+
+	<scm>
+		<url>http://10.117.1.199:88/su/su-starter</url>
+		<connection>scm:git:http://10.117.1.199:88/su/su-starter.git</connection>
+		<developerConnection>scm:git:http://10.117.1.199:88/su/su-starter.git</developerConnection>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>su-starter-base</module>
+		<module>su-starter-cache</module>
+		<module>su-starter-cache-redis</module>
+		<module>su-starter-cache-redisson</module>
+		<module>su-starter-fastdfs</module>
+		<module>su-starter-swagger</module>
+		<module>su-starter-web</module>
+		<module>su-starter-freemarker</module>
+		<module>su-starter-mail</module>
+		<module>su-starter-xss</module>
+		<module>su-starter-privileg</module>
+		<module>su-starter-kaptcha</module>
+		<module>su-starter-auth</module>
+		<module>su-starter-auth-client</module>
+		<module>su-starter-auth-server</module>
+		<module>su-starter-auth-feign</module>
+		<module>su-starter-ienum</module>
+		<module>su-starter-mybatis</module>
+		<module>su-starter-jpa</module>
+		<module>su-starter-jpa-search</module>
+		<module>su-starter-jpa-audit</module>
+		<module>su-starter-mvc</module>
+		<module>su-starter-dwz</module>
+		<module>su-starter-excel</module>
+		<module>su-starter-word</module>
+		<module>su-starter-pay</module>
+		<module>su-starter-process</module>
+		<module>su-starter-process-activiti</module>
+		<module>su-starter-id</module>
+		<module>su-starter-job</module>
+		<module>su-starter-job-worker</module>
+		<module>su-starter-job-manager</module>
+		<module>su-starter-dfs</module>
+		<module>su-starter-mq-kafka</module>
+		<module>su-starter-cas-server</module>
+	</modules>
+</project>

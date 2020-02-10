@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<privilegs>
+	<module name="系统管理">
+		<resource code="organ" name="机构">
+			<operate code="view" name="查看" />
+			<operate code="add" name="新增" />
+			<operate code="edit" name="编辑" />
+			<operate code="del" name="删除" />
+		</resource>
+		<resource code="user" name="用户">
+			<operate code="view" name="查看" />
+			<operate code="manage" name="管理" />
+		</resource>
+	</module>
+</privilegs>

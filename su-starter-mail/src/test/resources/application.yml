@@ -1,0 +1,17 @@
+spring:
+  mail:
+    host: smtp.163.com
+    port: 25
+    username: coo_mail_test
+    password: coomailtest
+    properties:
+      mail:
+        smtp:
+          auth: true;
+          starttlsEnable: false
+          timeout: 30000
+          debug: false
+logging:
+  level:
+    com:
+      cntest: DEBUG

@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.cntest.su.jpa.config.JpaAutoConfiguration
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.cntest.su.jpa.config.JpaEnvironmentPostProcessor,com.cntest.su.jpa.config.DruidEnvironmentPostProcessor

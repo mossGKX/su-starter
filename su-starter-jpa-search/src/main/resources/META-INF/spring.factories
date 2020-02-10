@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.cntest.su.jpa.search.config.JpaSearchAutoConfiguration
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.cntest.su.jpa.search.config.JpaSearchEnvironmentPostProcessor

@@ -1,0 +1,29 @@
+su.dfs:
+  type: obs
+  site: http://localhost:8080
+obs:
+  endpoint: obs.cn-south-1.myhwclouds.com
+  access-key-id: ZVIDDRRCGHPJAREVJAJH
+  access-key-secret: SGpw5fMeW6nlA6SKydrs6zPvERoFk7iWkbjfuVAx
+  default-bucket-name: ellearn-preprod
+oss:
+  endpoint: oss-cn-hangzhou.aliyuncs.com
+  access-key-id: LTAI4lYye9PDWlJZ
+  access-key-secret: D5Blkg0enRLoSZAEPDk6w7wmkmLq5h
+  default-bucket-name: ellearn-resource
+fdfs:
+  connect-timeout: 5000
+  so-timeout: 10000
+  pool:
+    max-total: 100
+    max-wait-millis: 5000
+  tracker-list:
+  - 10.9.4.64:22122
+  - 10.9.4.63:22122
+ldfs:
+  local-dir: /tmp
+logging:
+  level:
+    root: WARN
+    com:
+      cntest: DEBUG

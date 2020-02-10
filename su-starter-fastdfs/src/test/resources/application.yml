@@ -1,0 +1,13 @@
+fdfs:
+  connect-timeout: 5000
+  so-timeout: 10000
+  pool:
+    max-total: 100
+    max-wait-millis: 5000
+  tracker-list:
+  - 10.9.4.64:22122
+  - 10.9.4.63:22122
+logging:
+  level:
+    com:
+      cntest: DEBUG

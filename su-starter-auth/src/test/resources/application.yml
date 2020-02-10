@@ -1,0 +1,10 @@
+su:
+  auth:
+    algorithm-name: MD5
+    hex-encode: true
+    salted: false
+    salt: 12345678
+logging:
+  level:
+    com:
+      cntest: DEBUG

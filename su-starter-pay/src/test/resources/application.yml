@@ -1,0 +1,9 @@
+su:
+  pay:
+    yee:
+      return-url: http://2e3a285a.ngrok.io/applyFee/paySuccess
+      notify-url: http://2e3a285a.ngrok.io/pay/getYeepayResult
+logging:
+  level:
+    com:
+      cntest: DEBUG

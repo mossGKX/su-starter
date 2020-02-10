@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<localRepository>d:/work/repo</localRepository>
+	<mirrors>
+		<mirror>
+			<id>nexus</id>
+			<mirrorOf>*</mirrorOf>
+			<name>nexus</name>
+			<url>http://10.9.4.93:8075/nexus/content/groups/public</url>
+		</mirror>
+	</mirrors>
+	<servers>
+		<server>
+			<id>git</id>
+			<username>username</username>
+			<password>password</password>
+		</server>
+		<server>
+			<id>nexus</id>
+			<username>username</username>
+			<password>password</password>
+		</server>
+	</servers>
+	<profiles>
+		<profile>
+			<id>default</id>
+			<repositories>
+				<repository>
+					<id>nexus</id>
+					<url>http://10.9.4.93:8075/nexus/content/groups/public</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>default</activeProfile>
+	</activeProfiles>
+</settings>

@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.cntest.su.job.manager.config.JobManagerAutoConfiguration
